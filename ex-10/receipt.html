@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23BCE1719</title>
+</head>
+<body onload="show()">
+    <div id="rec"></div>
+    <script>
+        function show() {
+            let n = sessionStorage.getItem("name");
+            let i = sessionStorage.getItem("item");
+            let p = sessionStorage.getItem("price");
+            document.getElementById("rec").innerHTML = "Receipt<br>Name: " + n + "<br>Item: " + i + "<br>Price: " + p;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>23BCE1719</title>
+</head>
+<body>
+
+<h2>Fruit Picker</h2>
+<form>
+  <label for="f">Choose a fruit:</label>
+  <select id="f" name="f">
+    <optgroup label="Pome">
+      <option>Apple</option>
+      <option>Pear</option>
+    </optgroup>
+    <optgroup label="Citrus">
+      <option>Orange</option>
+      <option>Grapefruit</option>
+      <option>Mandarin</option>
+      <option>Lime</option>
+    </optgroup>
+    <optgroup label="Stone">
+      <option>Nectarine</option>
+      <option>Apricot</option>
+      <option>Peach</option>
+      <option>Plum</option>
+    </optgroup>
+    <optgroup label="Exotic">
+      <option>Banana</option>
+      <option>Mango</option>
+    </optgroup>
+    <optgroup label="Berries">
+      <option>Strawberry</option>
+      <option>Raspberry</option>
+      <option>Blueberry</option>
+      <option>Kiwifruit</option>
+      <option>Passionfruit</option>
+    </optgroup>
+    <optgroup label="Melons">
+      <option>Watermelon</option>
+      <option>Rock Melon</option>
+      <option>Honeydew Melon</option>
+    </optgroup>
+  </select>
+</form>
+
+<hr>
+
+<h2>Personal Details</h2>
+<form>
+  <label for="n">Name:</label>
+  <input type="text" id="n" name="n"><br><br>
+
+  <label for="r">Roll No:</label>
+  <input type="text" id="r" name="r"><br><br>
+
+  <label for="d">DOB:</label>
+  <input type="date" id="d" name="d"><br><br>
+
+  <label for="g">Gender:</label><br>
+  <input type="radio" id="m" name="g" value="m">
+  <label for="m">Male</label><br>
+  <input type="radio" id="f" name="g" value="f">
+  <label for="f">Female</label><br>
+  <input type="radio" id="o" name="g" value="o">
+  <label for="o">Other</label><br><br>
+
+  <label for="addr">Address:</label><br>
+  <textarea id="addr" name="addr" rows="4" cols="40"></textarea><br><br>
+
+  <label for="ph">Phone:</label>
+  <input type="text" id="ph" name="ph"><br><br>
+
+  <label for="e">Email:</label>
+  <input type="email" id="e" name="e"><br><br>
+
+  <label for="s">Skills:</label><br>
+  <input type="checkbox" name="s" value="c">C
+  <input type="checkbox" name="s" value="cpp">C++
+  <input type="checkbox" name="s" value="py">Python
+  <input type="checkbox" name="s" value="js">JavaScript<br><br>
+
+  <label for="d">Department:</label>
+  <select id="d" name="d">
+    <option>CSE</option>
+    <option>IT</option>
+    <option>ECE</option>
+    <option>EEE</option>
+    <option>MECH</option>
+  </select><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<h2>Upload Resume</h2>
+<form>
+  <label for="nm">Name:</label>
+  <input type="text" id="nm" name="nm"><br><br>
+
+  <label for="bd">DOB:</label>
+  <input type="date" id="bd" name="bd"><br><br>
+
+  <label for="deg">Degree:</label>
+  <select id="deg" name="deg">
+    <optgroup label="UG">
+      <option>BE</option>
+      <option>BTech</option>
+      <option>BSc</option>
+      <option>BA</option>
+      <option>BCA</option>
+      <option>BBA</option>
+      <option>Other</option>
+    </optgroup>
+    <optgroup label="PG">
+      <option>ME</option>
+      <option>MTech</option>
+      <option>MSc</option>
+      <option>MA</option>
+      <option>MCA</option>
+      <option>MBA</option>
+      <option>Other</option>
+    </optgroup>
+    <optgroup label="PhD">
+      <option>Engineering</option>
+      <option>Science</option>
+      <option>Management</option>
+      <option>Other</option>
+    </optgroup>
+  </select><br><br>
+
+  <label for="em">Email:</label>
+  <input type="email" id="em" name="em"><br><br>
+
+  <label for="rs">Upload:</label>
+  <input type="file" id="rs" name="rs"><br><br>
+
+  <label for="desc">Bio:</label><br>
+  <textarea id="desc" name="desc" rows="4" cols="40"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<h2>Product Feedback</h2>
+<form oninput="t.value = +d.value + +u.value + +p.value">
+  <label for="d">Design:</label>
+  <input type="range" id="d" name="d" min="0" max="10"><br><br>
+
+  <label for="u">Usability:</label>
+  <input type="range" id="u" name="u" min="0" max="10"><br><br>
+
+  <label for="p">Performance:</label>
+  <input type="range" id="p" name="p" min="0" max="10"><br><br>
+
+  <label>Total:</label>
+  <output name="t" for="d u p">0</output>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>23BCE1719</title>
+</head>
+<body>
+
+<h2>JS Tasks 1–5</h2>
+<button onclick="calc()">1. Calc</button>
+<button onclick="age()">2. Age</button>
+<button onclick="stu()">3. Confirm</button>
+<button onclick="lab()">4. Labour</button>
+<button onclick="disp()">5. Show</button>
+
+<p id="nm"></p>
+
+<script>
+function calc() {
+  let a = parseFloat(prompt("Enter 1st number"))
+  let b = parseFloat(prompt("Enter 2nd number"))
+  alert("Add: " + (a + b) + "\nSub: " + (a - b) + "\nMul: " + (a * b) + "\nDiv: " + (a / b) + "\nMod: " + (a % b))
+}
+
+function age() {
+  let a = parseInt(prompt("Enter age"))
+  alert(a >= 18 ? "Eligible to drive" : "Not eligible")
+}
+
+function stu() {
+  let c = confirm("Are you a student?")
+  let r = prompt("Enter Reg No")
+  alert(c ? "Student: " + r : "Not a student")
+}
+
+function lab() {
+  let h = parseInt(prompt("Enter hours worked"))
+  let m = parseInt(prompt("Enter material cost"))
+  let l = 45 * h
+  let t = l + m
+  alert("Labour: Rs." + l + "\nTotal: Rs." + t)
+}
+
+function disp() {
+  let r = prompt("Enter Reg No")
+  let n = prompt("Enter Name")
+  document.write("<p style='color:red;font-size:20px;'>Reg No: " + r + "</p>")
+  document.getElementById("nm").innerHTML = "<span style='color:blue;font-size:18px;'>" + n + "</span>"
+}
+</script>
+
+</body>
+</html>

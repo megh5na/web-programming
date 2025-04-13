@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>23BCE1719</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table, td, th { border: 1px solid black; border-collapse: collapse; }
+    td, th { padding: 5px; text-align: center; }
+    .t1 { background-color: lightgray; }
+    .n1 { background-color: blue; }
+    .n2 { background-color: yellow; }
+    .n3 { background-color: red; }
+    .n4 { background-color: white; }
+    .n5 { background-color: green; }
+    .r1 { background-color: #1719; }
+    .link { margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<h2>Simple Table</h2>
+<table>
+  <tr>
+    <th>Name</th><th>Age</th><th>City</th>
+  </tr>
+  <tr>
+    <td>Ana</td><td>22</td><td>Delhi</td>
+  </tr>
+  <tr>
+    <td>Raj</td><td>24</td><td>Mumbai</td>
+  </tr>
+  <tr>
+    <td>John</td><td>23</td><td>Chennai</td>
+  </tr>
+</table>
+
+<h2>Nested Tables</h2>
+<table class="n1">
+  <tr><td>
+    <table class="n2">
+      <tr><td>
+        <table class="n3">
+          <tr><td>
+            <table class="n4">
+              <tr><td>
+                <table class="n5">
+                  <tr><td>Level 5</td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </td></tr>
+        </table>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+
+<div class="link">
+  <a href="#t2">Click Me</a>
+</div>
+
+<h2 id="t2" class="r1">Test Table</h2>
+<table>
+  <tr>
+    <th>ID</th><th>Test</th><th>Score</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Math</td><td>90</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Science</td><td>85</td>
+  </tr>
+  <tr>
+    <td>3</td><td>CS</td><td>88</td>
+  </tr>
+  <tr>
+    <td colspan="3"><a href="#t3">Expenses</a></td>
+  </tr>
+</table>
+
+<h2 id="t3">Expenses Table</h2>
+<table>
+  <tr>
+    <th>Item</th><th>Cost</th>
+  </tr>
+  <tr>
+    <td>Books</td><td>₹500</td>
+  </tr>
+  <tr>
+    <td>Pen</td><td>₹100</td>
+  </tr>
+  <tr>
+    <td>Notebook</td><td>₹200</td>
+  </tr>
+</table>
+
+<h2>Details (Lists)</h2>
+<h3>Ordered</h3>
+<ol>
+  <li>Wake up</li>
+  <li>Brush</li>
+  <li>Study</li>
+  <li>Code</li>
+</ol>
+
+<h3>Unordered</h3>
+<ul>
+  <li>Milk</li>
+  <li>Bread</li>
+  <li>Butter</li>
+</ul>
+
+<h3>Description</h3>
+<dl>
+  <dt>HTML</dt><dd>Markup for web</dd>
+  <dt>CSS</dt><dd>Styles the page</dd>
+  <dt>JS</dt><dd>Makes page interactive</dd>
+</dl>
+
+</body>
+</html>

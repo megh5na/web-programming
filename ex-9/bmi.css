@@ -1,0 +1,16 @@
+.calc {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+label {
+    margin: 10px;
+}
+input, select {
+    margin: 5px;
+}
+button {
+    margin-top: 10px;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>23BCE1719</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header, nav, section, aside, article, footer { padding: 15px; }
+    header { background: #222; color: #fff; text-align: center; }
+    nav { background: #f2f2f2; }
+    aside { background: #f9f9f9; float: right; width: 20%; }
+    main { width: 75%; float: left; }
+    footer { clear: both; background: #333; color: #fff; text-align: center; }
+    progress, meter { width: 100%; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Meghana</h1>
+  <h2>Web Developer</h2>
+</header>
+
+<nav>
+  <a href="#resume">Resume</a> |
+  <a href="#media">Media</a> |
+  <a href="#form">Form</a>
+</nav>
+
+<aside>
+  <h3>Links</h3>
+  <ul>
+    <li>GitHub</li>
+    <li>LinkedIn</li>
+    <li>Blog</li>
+  </ul>
+</aside>
+
+<main>
+  <section id="resume">
+    <h2>Resume</h2>
+
+    <section>
+      <h3>Education</h3>
+      <p>B.Tech CSE, VIT Univ</p>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+      <article>
+        <h4>Frontend Intern</h4>
+        <p>Worked with HTML, CSS, JS</p>
+      </article>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <label>HTML</label><progress value="90" max="100"></progress>
+      <label>JS</label><progress value="85" max="100"></progress>
+      <label>Python</label><progress value="75" max="100"></progress>
+    </section>
+
+    <article>
+      <h3>Score</h3>
+      <p>DSA <meter value="80" min="0" max="100">80%</meter></p>
+    </article>
+
+    <figure>
+      <img src="/Users/meghana/Desktop/web-programming/Screenshot 2024-12-17 at 11.02.52 AM.png" alt="Me" width="100">
+      <figcaption>Profile Pic</figcaption>
+    </figure>
+
+    <details>
+      <summary>More About Me</summary>
+      <p>I enjoy hiking and music.</p>
+    </details>
+  </section>
+
+  <section id="media">
+    <h2>Media</h2>
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <h3>Video</h3>
+    <video width="300" height="200" controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <h3>SVG</h3>
+    <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
+        <!-- House Body -->
+        <rect x="50" y="100" width="100" height="100" fill="brown" />
+        
+        <!-- Roof -->
+        <polygon points="50,100 150,100 100,50" fill="red" />
+        
+        <!-- Door -->
+        <rect x="90" y="150" width="20" height="50" fill="saddlebrown" />
+        
+        <!-- Steps -->
+        <rect x="85" y="200" width="30" height="10" fill="gray" />
+        
+        <!-- Windows -->
+        <rect x="60" y="110" width="20" height="20" fill="skyblue" />
+        <rect x="120" y="110" width="20" height="20" fill="skyblue" />
+        
+        <!-- Circular Window on Roof -->
+        <circle cx="100" cy="75" r="10" fill="yellow" />
+        
+        <!-- Star and Moon -->
+        <polygon points="160,40 165,50 175,50 167,57 170,67 160,62 150,67 153,57 145,50 155,50"
+                 fill="#FFD700"/>
+        <path d="M180,40 A10,10 0 1,1 180,60 A8,8 0 1,0 180,40 Z"
+              fill="#FFFFE0"/>
+    </svg>
+
+    <h3>Canvas</h3>
+    <canvas id="c" width="300" height="150" style="border:1px solid #000;"></canvas>
+    <script>
+      let ctx = document.getElementById("c").getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(20, 20, 100, 50);
+    </script>
+  </section>
+
+  <section id="form">
+    <h2>Contact Form</h2>
+    <form>
+      <label>Name</label><br>
+      <input type="text" name="n"><br><br>
+
+      <label>Email</label><br>
+      <input type="email" name="e"><br><br>
+
+      <label>Gender</label><br>
+      <input type="radio" name="g">Male
+      <input type="radio" name="g">Female<br><br>
+
+      <label>Skills</label><br>
+      <input type="checkbox">HTML
+      <input type="checkbox">JS
+      <input type="checkbox">Python<br><br>
+
+      <label>City</label><br>
+      <select>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+      </select><br><br>
+
+      <label>Message</label><br>
+      <textarea rows="4" cols="30"></textarea><br><br>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Contact: test@mail.com | &copy; 2025</p>
+</footer>
+
+</body>
+</html>

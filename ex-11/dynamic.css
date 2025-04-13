@@ -1,0 +1,16 @@
+#tbl {
+    border-collapse: collapse;
+    margin: 20px;
+}
+#tbl td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.btn {
+    padding: 5px 10px;
+    background-color: red;
+}
+.txt {
+    padding: 5px;
+    background-color: green;
+}

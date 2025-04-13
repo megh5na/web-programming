@@ -1,0 +1,16 @@
+.form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: left;
+}
+label {
+    margin: 5px;
+}
+input, textarea, select {
+    margin: 5px;
+}
+#time {
+    margin: 10px;
+}
