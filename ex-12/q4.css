@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f0f0f0;
+}
+div {
+    width: 45%;
+    height: 400px;
+    margin: 10px;
+}

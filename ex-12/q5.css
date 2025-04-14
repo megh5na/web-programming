@@ -1,0 +1,41 @@
+body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#a {
+    background: #FF6347;
+    z-index: 1;
+    top: 50px;
+    left: 100px;
+}
+#b {
+    background: #4682B4;
+    z-index: 2;
+    top: 80px;
+    left: 130px;
+}
+#c {
+    background: #32CD32;
+    z-index: 3;
+    top: 110px;
+    left: 160px;
+}
+div:nth-child(4) {
+    position: relative;
+    top: 250px;
+}
+input, button {
+    margin: 5px;
+}
